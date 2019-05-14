@@ -3,9 +3,12 @@
 const Koa = require('koa')
 const mount = require('koa-mount')
 const graphqlHTTP = require('koa-graphql')
+const cors = require('@koa/cors')
 
 const schema = require('./graphql/schema')
 const initDB = require('./database')
+
+app.use(cors)
 
 initDB()
 
