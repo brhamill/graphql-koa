@@ -16,7 +16,7 @@ app.use(mount('/graphql', graphqlHTTP({
   graphiql: true
 })))
 
-app.listen(9000)
+app.listen(process.env.PORT || 9000)
 
 app.on('error', err => {
   log.error('server error', err)
