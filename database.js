@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const initDB = () => {
   mongoose.connect(
-    'mongodb://brhamill:password1@ds233452.mlab.com:33452/koa-graphql',
+    process.env.MONGODB_URI,
     { useNewUrlParser: true }
   )
 

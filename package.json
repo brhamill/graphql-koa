@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "graphql": "^14.3.0",
     "koa": "^2.7.0",
     "koa-graphql": "^0.8.0",
