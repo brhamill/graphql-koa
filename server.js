@@ -13,6 +13,7 @@ initDB()
 
 const app = new (Koa)
 
+app.use(cors)
 
 app.use(mount('/graphql', graphqlHTTP({
   schema,
